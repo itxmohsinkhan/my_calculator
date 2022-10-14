@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff252525),
+      backgroundColor: const Color(0xff252525),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -51,12 +51,14 @@ class _HomeScreenState extends State<HomeScreen> {
               Expanded(
                 flex: 2,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Row(
                       children: [
                         CustomButton(
                           title: 'AC',
-                          color: Color(0xff1357a6),
+                          color: const Color(0xff1357a6),
                           onPress: () {
                             userInput = '';
                             answer = '';
@@ -79,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         CustomButton(
                           title: '/',
-                          color: Color(0xff1357a6),
+                          color: const Color(0xff1357a6),
                           onPress: () {
                             userInput += '/';
                             setState(() {});
@@ -112,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         CustomButton(
                           title: 'x',
-                          color: Color(0xff1357a6),
+                          color: const Color(0xff1357a6),
                           onPress: () {
                             userInput += 'x';
                             setState(() {});
@@ -145,7 +147,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         CustomButton(
                           title: '-',
-                          color: Color(0xff1357a6),
+                          color: const Color(0xff1357a6),
                           onPress: () {
                             userInput += '-';
                             setState(() {});
@@ -178,7 +180,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         CustomButton(
                           title: '+',
-                          color: Color(0xff1357a6),
+                          color: const Color(0xff1357a6),
                           onPress: () {
                             userInput += '+';
                             setState(() {});
@@ -212,7 +214,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         CustomButton(
                           title: '=',
-                          color: Color(0xff1357a6),
+                          color: const Color(0xff1357a6),
                           onPress: () {
                             equalPres();
                             setState(() {});
